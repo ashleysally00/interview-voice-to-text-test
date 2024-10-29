@@ -1,0 +1,7 @@
+streamlit
+google-cloud-speech
+google-cloud-storage
+google-cloud-language
+sounddevice
+scipy
+numpy

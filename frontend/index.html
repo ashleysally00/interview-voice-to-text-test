@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #recordButton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        #stopButton {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            display: none;
+        }
+        #status {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        #transcript {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 100px;
+        }
+        .sentiment-score {
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mock Interview Chatbot</h1>
+        <button id="recordButton">Start Recording</button>
+        <button id="stopButton">Stop Recording</button>
+        <p id="status">Click 'Start Recording' to begin</p>
+        <div id="transcript"></div>
+        <div id="sentimentScore" class="sentiment-score"></div>
+    </div>
+    <!-- Use relative path to script -->
+    <script src="script.js"></script>
+</body>
+</html>
